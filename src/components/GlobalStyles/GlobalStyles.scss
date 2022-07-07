@@ -1,0 +1,24 @@
+// * file css chung cho toàn bộ project
+@import 'normalize.css';
+// todo import fonts
+
+//* thống nhất sử dụng font-size là rem 1rem = 10px,  margin padding là px
+// * tạo biến sử dụng những thuộc tính css chung
+:root {
+    // --primary-color:...;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    // font family:...;
+    font-size: 1.6rem;
+}
