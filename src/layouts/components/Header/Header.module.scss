@@ -1,0 +1,11 @@
+.wrapper {
+    height: 60px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    height: 100%;
+    width: var(--default-layout-width);
+}
