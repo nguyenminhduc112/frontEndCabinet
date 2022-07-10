@@ -1,5 +1,5 @@
 .wrapper {
-    height: 60px;
+    height: var(--default-header-height);
     border: 1px solid #ccc;
     display: flex;
     justify-content: center;
