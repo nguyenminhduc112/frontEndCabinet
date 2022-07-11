@@ -1,0 +1,11 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    color: var(--primary-color-sidebar);
+    background-color: var(--primary-background-color-sidebar);
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+}

@@ -1,0 +1,63 @@
+.wrapper {
+    position: absolute;
+    color: var(--primary-color-sidebar);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--second-background-color-sidebar);
+}
+
+.profile {
+    display: flex;
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    transition: all 0.4 ease;
+    background: auto;
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.avatar {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.name-job {
+    margin-left: 10px;
+}
+
+.name {
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.job {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.icon {
+    position: absolute;
+    left: 88%;
+    color: var(--primary-color-sidebar);
+    bottom: 5px;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.4s ease;
+    background: var(--primary-background-color-sidebar);
+}

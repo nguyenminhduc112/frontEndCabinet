@@ -1,0 +1,42 @@
+@import 'normalize.css';
+:root {
+    // --primary: #fe2c55;
+    --black: #000;
+    --white: #fff;
+    --primary-background-color-sidebar: #fff;
+    --second-background-color-sidebar: #04a2b7;
+    --primary-color-sidebar: #0ab5cb;
+    // --second-color-sidebar: #04a2b7;
+    --text-color: #161823;
+    --default-header-height: 60px;
+    // --font-family: ...;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+    color: var(--text-color);
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
