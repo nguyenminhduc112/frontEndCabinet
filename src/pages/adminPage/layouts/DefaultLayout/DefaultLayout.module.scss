@@ -2,13 +2,22 @@
     display: flex;
 }
 
-.content {
+@mixin defaultLayoutStyle {
     position: absolute;
     height: 100%;
-    width: calc(100% - 240px);
-    left: 240px;
     overflow: scroll;
     scroll-behavior: smooth;
     transition: all 0.5s ease;
     background-color: pink;
+}
+
+.content {
+    @include defaultLayoutStyle;
+    width: calc(100% - 78px);
+    left: 78px;
+}
+.active {
+    @include defaultLayoutStyle;
+    width: calc(100% - 240px);
+    left: 240px;
 }

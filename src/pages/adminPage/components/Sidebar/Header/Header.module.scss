@@ -5,11 +5,21 @@
     // background-color: black;
 }
 
-.logo {
+@mixin defaultLogoStyles {
     display: flex;
     align-items: center;
     width: 90%;
     transition: all 0.5s ease;
+}
+
+.logo {
+    @include defaultLogoStyles;
+    opacity: 0;
+}
+
+.logoActive {
+    @include defaultLogoStyles;
+    opacity: 1;
 }
 
 .logo-img {
@@ -25,9 +35,8 @@
     text-overflow: ellipsis;
 }
 
-.btn-menu {
+@mixin defaultMenuBtnStyles {
     position: absolute;
-    left: 90%;
     font-size: 20px;
     height: 50px;
     width: 50px;
@@ -35,4 +44,14 @@
     line-height: 50px;
     cursor: pointer;
     transform: translateX(-50%);
+}
+
+.btn-menu {
+    @include defaultMenuBtnStyles;
+    left: 50%;
+}
+
+.btnActive {
+    @include defaultMenuBtnStyles;
+    left: 90%;
 }

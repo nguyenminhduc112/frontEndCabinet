@@ -9,7 +9,7 @@
     color: var(--primary-color-sidebar);
     height: 50px;
     width: 100%;
-    margin: 0 5px;
+    // padding-left: 16px;
     list-style: none;
     line-height: 50px;
     border-radius: 12px;
@@ -17,7 +17,6 @@
     &.active {
         color: var(--white);
         background: var(--primary-color-sidebar);
-
         .icon {
             display: none;
         }
@@ -28,6 +27,9 @@
     }
 
     &:hover {
+        .icon {
+            color: var(--white);
+        }
         color: var(--white);
         background: var(--primary-color-sidebar);
     }
@@ -36,19 +38,31 @@
 .icon,
 .active-icon {
     display: flex;
-    font-size: 2.4rem;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    min-width: 50px;
-    border-radius: 12px;
+    height: 25px;
+    min-width: 25px;
     line-height: 50px;
     text-align: center;
+    margin-right: 22px;
+    transform: translateX(50%);
+}
+
+@mixin defaultTitleStyles {
+    font-size: 2rem;
+    transition: all 0.5s ease;
 }
 
 .title {
-    font-size: 2rem;
-    transition: all 0.5s ease;
+    @include defaultTitleStyles;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.active {
+    @include defaultTitleStyles;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .active-icon {

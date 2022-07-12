@@ -5,11 +5,11 @@ import { NavLink } from 'react-router-dom';
 
 const cx = classNames.bind(styles)
 
-function Footer({ avatar, name, job, icon, to }) {
+function Footer({ avatar, name, job, icon, to, sidebar }) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('profile')}>
-                <div className={cx('profile-details')}>
+                <div className={cx(sidebar ? 'profile-details' : 'activeProfileDetails')}>
                     <img src={avatar} alt='Thien AN' className={cx('avatar')} />
                     <div className={cx('name-job')}>
                         <div className={cx('name')}>{name}</div>
@@ -17,10 +17,10 @@ function Footer({ avatar, name, job, icon, to }) {
                     </div>
                 </div>
                 <NavLink to={to}>
-                    <span className={cx('icon')}>{icon}</span>
+                    <span className={cx(sidebar ? 'icon' : 'activeIcon')}>{icon}</span>
                 </NavLink>
             </div>
-        </div>
+        </div >
     );
 }
 

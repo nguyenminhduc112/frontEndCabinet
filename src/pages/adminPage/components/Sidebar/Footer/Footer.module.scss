@@ -16,12 +16,22 @@
     background: auto;
 }
 
-.profile-details {
+@mixin defaultProfileDetailsStyles {
     display: flex;
     align-items: center;
-    opacity: 1;
-    pointer-events: none;
     white-space: nowrap;
+}
+
+.profile-details {
+    @include defaultProfileDetailsStyles;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.activeProfileDetails {
+    @include defaultProfileDetailsStyles;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .avatar {
@@ -37,18 +47,17 @@
 
 .name {
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(-- --primary-color-sidebar);
     font-weight: 400;
 }
 
 .job {
-    color: var(--white);
+    color: var(-- --primary-color-sidebar);
     font-size: 1.2rem;
 }
 
-.icon {
+@mixin defaultIconStyles {
     position: absolute;
-    left: 88%;
     color: var(--primary-color-sidebar);
     bottom: 5px;
     transform: translateX(-50%);
@@ -60,4 +69,14 @@
     text-align: center;
     transition: all 0.4s ease;
     background: var(--primary-background-color-sidebar);
+}
+
+.icon {
+    @include defaultIconStyles;
+    left: 50%;
+}
+
+.activeIcon {
+    @include defaultIconStyles;
+    left: 88%;
 }
