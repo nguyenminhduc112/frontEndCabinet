@@ -13,39 +13,43 @@
     list-style: none;
     line-height: 50px;
     border-radius: 12px;
+    margin-top: 22px;
 
     &.active {
         color: var(--white);
         background: var(--primary-color-sidebar);
-        .icon {
-            display: none;
-        }
-
-        .active-icon {
-            display: flex;
-        }
     }
 
     &:hover {
         .icon {
             color: var(--white);
+            font-size: 2rem;
         }
         color: var(--white);
         background: var(--primary-color-sidebar);
     }
 }
 
-.icon,
-.active-icon {
+@mixin defaultIconStyles {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25px;
-    min-width: 25px;
     line-height: 50px;
     text-align: center;
     margin-right: 22px;
     transform: translateX(50%);
+}
+
+.icon,
+.active-icon {
+    font-size: 3.5rem;
+    @include defaultIconStyles;
+}
+
+.sidebarSmallIcon {
+    font-size: 2rem;
+    height: 25px;
+    @include defaultIconStyles;
 }
 
 @mixin defaultTitleStyles {

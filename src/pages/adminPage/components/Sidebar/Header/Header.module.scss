@@ -37,7 +37,6 @@
 
 @mixin defaultMenuBtnStyles {
     position: absolute;
-    font-size: 20px;
     height: 50px;
     width: 50px;
     text-align: center;
@@ -48,10 +47,12 @@
 
 .btn-menu {
     @include defaultMenuBtnStyles;
+    font-size: 3.5rem;
     left: 50%;
 }
 
 .btnActive {
     @include defaultMenuBtnStyles;
+    font-size: 2rem;
     left: 90%;
 }

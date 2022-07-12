@@ -1,4 +1,4 @@
-export const HomeIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const HomeIcon = ({ width = '3.5rem', height = '3.5rem', className = "" }) => (
     <svg
         className={className}
         width={width}
@@ -15,7 +15,7 @@ export const HomeIcon = ({ width = '3.2rem', height = '3.2rem', className }) => 
     </svg>
 );
 
-export const HomeActiveIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const HomeActiveIcon = ({ width = '3.5rem', height = '3.5rem', className = "" }) => (
     <svg
         className={className}
         width={width}
@@ -32,7 +32,7 @@ export const HomeActiveIcon = ({ width = '3.2rem', height = '3.2rem', className 
     </svg>
 );
 
-export const UserGroupIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const UserGroupIcon = ({ width = '3.5rem', height = '3.5rem', className = "" }) => (
     <svg
         className={className}
         width={width}
@@ -59,7 +59,7 @@ export const UserGroupIcon = ({ width = '3.2rem', height = '3.2rem', className }
     </svg>
 );
 
-export const UserGroupActiveIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const UserGroupActiveIcon = ({ width = '3.5rem', height = '3.5rem', className = "" }) => (
     <svg
         className={className}
         width={width}
@@ -72,5 +72,43 @@ export const UserGroupActiveIcon = ({ width = '3.2rem', height = '3.2rem', class
         <path d="M7.10396 34.7906C8.78769 30.2189 12.8204 27 18.0009 27C23.1818 27 27.2107 30.2213 28.8958 34.7898C29.3075 35.906 28.6141 37 27.5 37H8.5C7.38629 37 6.69289 35.9067 7.10396 34.7906Z"></path>
         <path d="M40.6308 37H32C31.2264 34.1633 30.0098 31.5927 28.144 29.7682C29.5384 28.9406 31.1829 28.5 33 28.5C37.239 28.5 40.536 30.8992 41.9148 35.0108C42.2516 36.0154 41.5423 37 40.6308 37Z"></path>
         <path d="M33 26.5C36.0376 26.5 38.5 24.0376 38.5 21C38.5 17.9624 36.0376 15.5 33 15.5C29.9624 15.5 27.5 17.9624 27.5 21C27.5 24.0376 29.9624 26.5 33 26.5Z"></path>
+    </svg>
+);
+
+export const CabinetIcon = ({ width = '3.5rem', height = '3.5rem', className = "svg-inline--fa fa-briefcase" }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="briefcase"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512">
+        <path
+            fill="currentColor"
+            d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z">
+        </path>
+    </svg>
+);
+
+export const DeviceIcon = ({ width = '3.5rem', height = '3.5rem', className = "svg-inline--fa fa-wrench icon" }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="wrench"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512">
+        <path
+            fill="currentColor"
+            d="M507.6 122.8c-2.904-12.09-18.25-16.13-27.04-7.338l-76.55 76.56l-83.1-.0002l0-83.1l76.55-76.56c8.791-8.789 4.75-24.14-7.336-27.04c-23.69-5.693-49.34-6.111-75.92 .2484c-61.45 14.7-109.4 66.9-119.2 129.3C189.8 160.8 192.3 186.7 200.1 210.1l-178.1 178.1c-28.12 28.12-28.12 73.69 0 101.8C35.16 504.1 53.56 512 71.1 512s36.84-7.031 50.91-21.09l178.1-178.1c23.46 7.736 49.31 10.24 76.17 6.004c62.41-9.84 114.6-57.8 129.3-119.2C513.7 172.1 513.3 146.5 507.6 122.8zM80 456c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24s24 10.74 24 24C104 445.3 93.25 456 80 456z">
+        </path>
     </svg>
 );

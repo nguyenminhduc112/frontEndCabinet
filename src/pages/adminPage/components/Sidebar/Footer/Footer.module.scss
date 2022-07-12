@@ -1,10 +1,10 @@
 .wrapper {
     position: absolute;
-    color: var(--primary-color-sidebar);
+    color: var(--white);
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--second-background-color-sidebar);
+    background-color: var(--primary-color-sidebar);
 }
 
 .profile {
@@ -47,12 +47,10 @@
 
 .name {
     font-size: 1.5rem;
-    color: var(-- --primary-color-sidebar);
     font-weight: 400;
 }
 
 .job {
-    color: var(-- --primary-color-sidebar);
     font-size: 1.2rem;
 }
 

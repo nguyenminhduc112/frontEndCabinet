@@ -10,12 +10,12 @@ import Footer from "./Footer";
 import config from "../../../../config";
 
 // Icon
-import { HomeActiveIcon, HomeIcon, UserGroupIcon, UserGroupActiveIcon } from '../../../../globalComponents/Icon'
+import { HomeActiveIcon, HomeIcon, UserGroupIcon, UserGroupActiveIcon, CabinetIcon, DeviceIcon } from '../../../../globalComponents/Icon'
 import images from "../../../../assets/images";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faBars,
-    faBriefcase, faRightFromBracket, faWrench,
+    faBriefcase, faHome, faRightFromBracket, faUserGroup, faWrench,
 } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles)
@@ -37,32 +37,28 @@ function Sidebar({ sidebar, setSidebar, showSidebar }) {
                     sidebar={sidebar}
                     title="Dashboard"
                     to={config.routes.dashboard}
-                    icon={<HomeIcon />}
-                    activeIcon={<HomeActiveIcon />}
+                    icon={sidebar ? <FontAwesomeIcon icon={faHome} width='2.5rem' /> : <FontAwesomeIcon icon={faHome} width='3.5rem' />}
                 />
 
                 <MenuItem
                     sidebar={sidebar}
                     title="User"
                     to={config.routes.user}
-                    icon={<UserGroupIcon />}
-                    activeIcon={<UserGroupActiveIcon />}
+                    icon={sidebar ? <FontAwesomeIcon icon={faUserGroup} width='2.5rem' /> : <FontAwesomeIcon icon={faUserGroup} width='3.5rem' />}
                 />
 
                 <MenuItem
                     sidebar={sidebar}
                     title="Cabinet"
                     to={config.routes.cabinet}
-                    icon={<FontAwesomeIcon icon={faBriefcase} />}
-                    activeIcon={<FontAwesomeIcon icon={faBriefcase} />}
+                    icon={sidebar ? <CabinetIcon width="2.5rem" /> : <CabinetIcon />}
                 />
 
                 <MenuItem
                     sidebar={sidebar}
                     title="Device"
                     to={config.routes.device}
-                    icon={<FontAwesomeIcon icon={faWrench} />}
-                    activeIcon={<FontAwesomeIcon icon={faWrench} />}
+                    icon={sidebar ? <DeviceIcon width="2.5rem" /> : <DeviceIcon />}
                 />
 
             </Menu>
