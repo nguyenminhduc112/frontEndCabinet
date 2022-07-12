@@ -1,5 +1,15 @@
 .wrapper {
     width: 100%;
-    background-color: pink;
+    background-color: var(--white);
     margin-top: 30px;
+    min-height: 800px;
+}
+
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 1.8rem;
 }

@@ -1,0 +1,36 @@
+.table {
+    width: 100%;
+    text-align: left;
+    table-layout: fixed;
+}
+
+.heading {
+    background-color: #ddd;
+    color: #838383;
+}
+
+.table thead tr th {
+    padding-left: 16px;
+    font-weight: 600;
+}
+
+tbody tr {
+    height: 30px;
+}
+
+tbody tr td {
+    padding-left: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// State type
+.red {
+    color: var(--error);
+}
+
+.green {
+    color: var(--succes);
+}
