@@ -1,11 +1,16 @@
 @import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 :root {
     // --primary: #fe2c55;
     --black: #000;
     --white: #fff;
+
     --primary-background-color-sidebar: #fff;
     --second-background-color-sidebar: #8ddbffc7;
     --primary-color-sidebar: #00aeff;
+
+    --background-color-content: #e7fbfc;
     --text-color: #161823;
     --default-header-height: 60px;
     // --font-family: ...;
@@ -19,6 +24,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {

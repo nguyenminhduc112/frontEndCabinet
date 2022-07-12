@@ -1,0 +1,58 @@
+.wrapper {
+    width: 22%;
+
+    height: 100%;
+}
+
+.title {
+    // margin-left: ;
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+    width: 100%;
+    height: calc(100% - 24px);
+    border-radius: 12px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.box-number {
+    font-size: 4.4rem;
+    letter-spacing: 5px;
+}
+
+.box-title {
+    font-size: 2.4rem;
+}
+
+// Box type
+.blue {
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+}
+
+.purple {
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+}
+
+.orange {
+    background-color: #f7b42c;
+    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+}
+
+.green {
+    background-color: #7cffcb;
+    background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+}
