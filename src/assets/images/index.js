@@ -11,6 +11,7 @@ const images = {
     device: require('../images/device-icon.png'),
     //Avatar
     avatar: require('../images/avatar.jpg'),
+    noImage: require('../images/no-image.png'),
 };
 
 export default images;

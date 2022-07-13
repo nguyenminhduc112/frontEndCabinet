@@ -2,15 +2,16 @@ import classNames from "classnames/bind";
 import styles from './Header.module.scss';
 import images from "../../../../assets/images";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 import config from '../../../../config'
+import Avatar from "../../../../globalComponents/Avatar";
 
 const cx = classNames.bind(styles)
 
 function Header() {
     const info = {
-        icon: <FontAwesomeIcon icon={faUser} />,
+        avatar: images.avatar,
         title: 'LHU B304 LAB',
         dropDownIcon: <FontAwesomeIcon icon={faAngleDown} />,
     }
@@ -20,7 +21,7 @@ function Header() {
                 <img src={images.logo} alt='Logo' className={cx('logo')} />
             </Link>
             <div className={cx('info-wrapper')}>
-                <span className={cx('icon')} >{info.icon}</span>
+                <Avatar small src={info.avatar} alt='Admin' />
                 <span className={cx('title')}>{info.title}</span>
                 <span className={cx('iconDrop')}>{info.dropDownIcon}</span>
             </div>

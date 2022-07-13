@@ -3,6 +3,7 @@ import styles from './Footer.module.scss';
 
 import { NavLink } from 'react-router-dom';
 
+import Avatar from "../../../../../globalComponents/Avatar";
 const cx = classNames.bind(styles)
 
 function Footer({ avatar, name, job, icon, to, sidebar }) {
@@ -10,7 +11,7 @@ function Footer({ avatar, name, job, icon, to, sidebar }) {
         <div className={cx('wrapper')}>
             <div className={cx('profile')}>
                 <div className={cx(sidebar ? 'profile-details' : 'activeProfileDetails')}>
-                    <img src={avatar} alt='Thien AN' className={cx('avatar')} />
+                    <Avatar small src={avatar} />
                     <div className={cx('name-job')}>
                         <div className={cx('name')}>{name}</div>
                         <div className={cx('job')}>{job}</div>

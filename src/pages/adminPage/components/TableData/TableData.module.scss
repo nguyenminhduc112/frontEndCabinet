@@ -5,20 +5,20 @@
 }
 
 .heading {
-    background-color: #ddd;
-    color: #838383;
+    background-color: #dcdcdc;
+    color: #686868;
 }
 
-.table thead tr th {
+.title {
     padding-left: 16px;
     font-weight: 600;
 }
 
-tbody tr {
-    height: 30px;
+tbody .tr {
+    height: 36px;
 }
 
-tbody tr td {
+.tr td {
     padding-left: 16px;
     font-weight: 600;
     white-space: nowrap;
@@ -32,5 +32,5 @@ tbody tr td {
 }
 
 .green {
-    color: var(--succes);
+    color: var(--success);
 }

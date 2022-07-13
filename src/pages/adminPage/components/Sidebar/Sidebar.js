@@ -10,7 +10,7 @@ import Footer from "./Footer";
 import config from "../../../../config";
 
 // Icon
-import { HomeActiveIcon, HomeIcon, UserGroupIcon, UserGroupActiveIcon, CabinetIcon, DeviceIcon } from '../../../../globalComponents/Icon'
+
 import images from "../../../../assets/images";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -37,28 +37,28 @@ function Sidebar({ sidebar, setSidebar, showSidebar }) {
                     sidebar={sidebar}
                     title="Dashboard"
                     to={config.routes.dashboard}
-                    icon={sidebar ? <FontAwesomeIcon icon={faHome} width='2.5rem' /> : <FontAwesomeIcon icon={faHome} width='3.5rem' />}
+                    icon={sidebar ? <FontAwesomeIcon icon={faHome} width='2.5rem' /> : <FontAwesomeIcon icon={faHome} />}
                 />
 
                 <MenuItem
                     sidebar={sidebar}
                     title="User"
                     to={config.routes.user}
-                    icon={sidebar ? <FontAwesomeIcon icon={faUserGroup} width='2.5rem' /> : <FontAwesomeIcon icon={faUserGroup} width='3.5rem' />}
+                    icon={sidebar ? <FontAwesomeIcon icon={faUserGroup} width='2.5rem' /> : <FontAwesomeIcon icon={faUserGroup} />}
                 />
 
                 <MenuItem
                     sidebar={sidebar}
                     title="Cabinet"
                     to={config.routes.cabinet}
-                    icon={sidebar ? <CabinetIcon width="2.5rem" /> : <CabinetIcon />}
+                    icon={sidebar ? <FontAwesomeIcon icon={faBriefcase} width="2.5rem" /> : <FontAwesomeIcon icon={faBriefcase} />}
                 />
 
                 <MenuItem
                     sidebar={sidebar}
                     title="Device"
                     to={config.routes.device}
-                    icon={sidebar ? <DeviceIcon width="2.5rem" /> : <DeviceIcon />}
+                    icon={sidebar ? <FontAwesomeIcon icon={faWrench} width="2.5rem" /> : <FontAwesomeIcon icon={faWrench} />}
                 />
 
             </Menu>

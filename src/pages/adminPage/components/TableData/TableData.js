@@ -13,13 +13,13 @@ function TableData({ tblDataTitles, components, className, }) {
                 <thead className={cx('heading')}>
                     <tr>
                         {tblDataTitles.map(tblDataTitle => (
-                            <th>{tblDataTitle}</th>
+                            <th className={cx('title')}>{tblDataTitle}</th>
                         ))}
                     </tr>
                 </thead>
                 <tbody>
                     {components.map(component => (
-                        <tr>
+                        <tr className={cx('tr')}>
                             <td>
                                 {component.device}
                             </td>

@@ -3,7 +3,9 @@ import User from '../pages/User/';
 import Cabinet from '../pages/Cabinet';
 import Device from '../pages/Device';
 
+
 import config from '../../../config';
+
 
 const adminRoutes = [
     { path: config.routes.dashboard, component: Home },

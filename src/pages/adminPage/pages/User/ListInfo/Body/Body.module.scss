@@ -1,0 +1,24 @@
+.prevTable {
+    display: flex;
+    border-bottom: 1px solid var(--gray);
+}
+
+.btn-show,
+.green {
+    width: 120px;
+    color: var(--gray);
+    height: 40px;
+    background-color: transparent;
+    font-size: 1.6rem;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+    cursor: pointer;
+    &:hover {
+        color: var(--success);
+        border-bottom: 1px solid var(--success);
+    }
+}
+
+.green {
+    color: var(--success);
+    border-bottom: 1px solid var(--success);
+}

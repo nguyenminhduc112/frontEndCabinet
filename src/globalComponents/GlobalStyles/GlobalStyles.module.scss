@@ -6,8 +6,8 @@
     --black: #000;
     --white: #fff;
     --gray: #9f9f9f;
-    --error: #fd0002;
-    --succes: #00fe16;
+    --error: #ff2627;
+    --success: #05ff00;
 
     --primary-background-color-sidebar: #fff;
     --second-background-color-sidebar: #8ddbffc7;
@@ -15,7 +15,7 @@
     --background-color-content: #e7fbfc;
     --text-color: #161823;
     --default-header-height: 60px;
-    // --font-family: ...;
+    --font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -26,7 +26,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
 }
 
 body {

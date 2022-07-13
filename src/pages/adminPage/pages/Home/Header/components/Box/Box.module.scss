@@ -25,15 +25,16 @@
     border-radius: 12px;
     color: var(--white);
     font-weight: 600;
+    box-shadow: inset 0 0 8px 0px white, inset 0 0 3px 2px white;
 }
 
 .box-number {
-    font-size: 4.4rem;
+    font-size: 4rem;
     letter-spacing: 5px;
 }
 
 .box-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 // Box type
@@ -53,6 +54,6 @@
 }
 
 .green {
-    background-color: #7cffcb;
-    background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+    background-color: #9afea4;
+    background-image: linear-gradient(12deg, #9afea4 5%, #71ffd9 95%);
 }
