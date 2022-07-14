@@ -7,6 +7,10 @@ const cx = classNames.bind(styles)
 
 function DatasUser() {
     // Chưa có API nên gắn cứng data
+
+    // const [value, setValue] = useState('')
+    // const [values, setValues] = useState([])
+
     const dataU = {
         titles: [
             'Tên',
@@ -15,60 +19,64 @@ function DatasUser() {
         ],
         datas: [
             {
+                key: Math.random(),
+                name: 'Ân Thiên',
+                id: 'thienanlhu',
+                email: 'thienan1804@lhu.edu.vn',
+            },
+            {
+                key: Math.random(),
+                name: 'Ân Thiên',
+                id: 'thienanlhu',
+                email: 'thienan1804@lhu.edu.vn',
+            },
+            {
+                key: Math.random(),
                 name: 'Thiên Ân',
                 id: 'thienanlhu',
                 email: 'thienan1804@lhu.edu.vn',
             },
             {
+                key: Math.random(),
+                name: 'Ân Thiên',
+                id: 'thienanlhu',
+                email: 'thienan1804@lhu.edu.vn',
+            },
+            {
+                key: Math.random(),
+                name: 'Ân Thiên',
+                id: 'thienanlhu',
+                email: 'thienan1804@lhu.edu.vn',
+            },
+            {
+                key: Math.random(),
                 name: 'Thiên Ân',
                 id: 'thienanlhu',
                 email: 'thienan1804@lhu.edu.vn',
             },
             {
-                name: 'Thiên Ân',
+                key: Math.random(),
+                name: 'Ân Thiên',
                 id: 'thienanlhu',
                 email: 'thienan1804@lhu.edu.vn',
             },
             {
-                name: 'Thiên Ân',
+                key: Math.random(),
+                name: 'Ân Thiên',
                 id: 'thienanlhu',
                 email: 'thienan1804@lhu.edu.vn',
             },
-            {
-                name: 'Thiên Ân',
-                id: 'thienanlhu',
-                email: 'thienan1804@lhu.edu.vn',
-            },
-            {
-                name: 'Thiên Ân',
-                id: 'thienanlhu',
-                email: 'thienan1804@lhu.edu.vn',
-            },
-            {
-                name: 'Thiên Ân',
-                id: 'thienanlhu',
-                email: 'thienan1804@lhu.edu.vn',
-            },
-            {
-                name: 'Thiên Ân',
-                id: 'thienanlhu',
-                email: 'thienan1804@lhu.edu.vn',
-            },
-            {
-                name: 'Thiên Ân',
-                id: 'thienanlhu',
-                email: 'thienan1804@lhu.edu.vn',
-            },
+
         ]
 
     }
+
 
     return (
         <div className={cx('wrapper')}>
             <GlobalTable
                 titles={dataU.titles}
                 components={dataU.datas}
-                key={dataU.titles}
             />
         </div>
     );

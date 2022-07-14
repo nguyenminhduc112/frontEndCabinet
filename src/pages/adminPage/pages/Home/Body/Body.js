@@ -18,6 +18,7 @@ function Body() {
 
         datas: [
             {
+                key: Math.random(),
                 device: 'Mackbook Air 1',
                 quantity: 2,
                 time: '9:30 AM - 18/04/2003',
@@ -25,6 +26,7 @@ function Body() {
                 state: true,
             },
             {
+                key: Math.random(),
                 device: 'Mackbook Air 2',
                 quantity: 3,
                 time: '9:30 AM - 18/04/2003',
@@ -32,6 +34,7 @@ function Body() {
                 state: false,
             },
             {
+                key: Math.random(),
                 device: 'Mackbook Air 1',
                 quantity: 2,
                 time: '9:30 AM - 18/04/2003',
@@ -39,6 +42,7 @@ function Body() {
                 state: true,
             },
             {
+                key: Math.random(),
                 device: 'Mackbook Air 2',
                 quantity: 3,
                 time: '9:30 AM - 18/04/2003',
@@ -46,6 +50,7 @@ function Body() {
                 state: false,
             },
             {
+                key: Math.random(),
                 device: 'Mackbook Air 1',
                 quantity: 2,
                 time: '9:30 AM - 18/04/2003',
@@ -53,6 +58,7 @@ function Body() {
                 state: true,
             },
             {
+                key: Math.random(),
                 device: 'Mackbook Air 2',
                 quantity: 3,
                 time: '9:30 AM - 18/04/2003',
@@ -60,6 +66,7 @@ function Body() {
                 state: false,
             },
             {
+                key: Math.random(),
                 device: 'Mackbook Air 1',
                 quantity: 2,
                 time: '9:30 AM - 18/04/2003',
@@ -67,6 +74,7 @@ function Body() {
                 state: true,
             },
             {
+                key: Math.random(),
                 device: 'Mackbook Air 2',
                 quantity: 3,
                 time: '9:30 AM - 18/04/2003',
@@ -86,8 +94,6 @@ function Body() {
             <TableData
                 tblDataTitles={tblDatas.title}
                 components={tblDatas.datas}
-                key={tblDatas.title}
-
             />
         </div>
     );

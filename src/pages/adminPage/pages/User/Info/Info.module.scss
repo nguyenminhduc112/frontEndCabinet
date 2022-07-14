@@ -4,3 +4,42 @@
     border-radius: 10px;
     margin-left: 20px;
 }
+
+.logo,
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 2.5rem;
+}
+
+.icon {
+    height: 150px;
+    width: 150px;
+    margin: 22px 0;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.id {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.logo-img {
+    padding-left: 8px;
+    margin-bottom: 22px;
+}
+
+.logo-name {
+    font-weight: 600;
+    color: #022279;
+    margin-bottom: 20px;
+}

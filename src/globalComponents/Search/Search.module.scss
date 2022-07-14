@@ -47,6 +47,23 @@
     right: calc(var(--search-button-width) + 16px);
 }
 
+.clear {
+    cursor: pointer;
+}
+
+.loading {
+    animation: spiner 0.8s linear infinite;
+}
+
+@keyframes spiner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .search-btn {
     width: var(--search-button-width);
     height: 100%;

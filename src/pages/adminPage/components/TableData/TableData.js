@@ -18,8 +18,8 @@ function TableData({ tblDataTitles, components, className, }) {
                     </tr>
                 </thead>
                 <tbody>
-                    {components.map(component => (
-                        <tr className={cx('tr')}>
+                    {components.map((component, index) => (
+                        <tr className={cx('tr')} key={component.key}>
                             <td>
                                 {component.device}
                             </td>

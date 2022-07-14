@@ -5,11 +5,27 @@
     text-align: left;
 }
 
+.tr-head {
+    color: var(--text-color);
+    height: 40px;
+    font-size: 1.4rem;
+}
+
 .tr,
 .even {
     color: var(--text-color);
     height: 40px;
     font-size: 1.4rem;
+    cursor: pointer;
+    &:hover {
+        background-color: #00aeff;
+        color: var(--white);
+    }
+
+    &:focus {
+        background-color: #00aeff;
+        color: var(--white);
+    }
 }
 
 .even {
@@ -44,6 +60,14 @@
         height: 40px;
         padding-left: 4rem;
     }
+}
+
+.email {
+    display: block;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .icon {
