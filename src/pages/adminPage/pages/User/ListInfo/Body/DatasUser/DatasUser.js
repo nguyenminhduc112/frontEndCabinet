@@ -1,9 +1,6 @@
-import classNames from "classnames/bind";
-import styles from './DatasUser.module.scss';
+
 import GlobalTable from "../GlobalTable/GlobalTable";
 
-
-const cx = classNames.bind(styles)
 
 function DatasUser() {
     // Chưa có API nên gắn cứng data
@@ -26,20 +23,14 @@ function DatasUser() {
             },
             {
                 key: Math.random(),
-                name: 'Ân Thiên',
-                id: 'thienanlhu',
+                name: 'Ân Qúa đẹp trai rồi',
+                id: 'thienandeptraiquadilhu',
                 email: 'thienan1804@lhu.edu.vn',
             },
             {
                 key: Math.random(),
-                name: 'Thiên Ân',
-                id: 'thienanlhu',
-                email: 'thienan1804@lhu.edu.vn',
-            },
-            {
-                key: Math.random(),
-                name: 'Ân Thiên',
-                id: 'thienanlhu',
+                name: 'Cũng là Ân nhưng đẹp trai x10',
+                id: 'thienandeptraix10lhu',
                 email: 'thienan1804@lhu.edu.vn',
             },
             {
@@ -50,8 +41,14 @@ function DatasUser() {
             },
             {
                 key: Math.random(),
-                name: 'Thiên Ân',
-                id: 'thienanlhu',
+                name: 'Ân Qúa đẹp trai rồi',
+                id: 'thienandeptraiquadilhu',
+                email: 'thienan1804@lhu.edu.vn',
+            },
+            {
+                key: Math.random(),
+                name: 'Cũng là Ân nhưng đẹp trai x10',
+                id: 'thienandeptraix10lhu',
                 email: 'thienan1804@lhu.edu.vn',
             },
             {
@@ -62,8 +59,14 @@ function DatasUser() {
             },
             {
                 key: Math.random(),
-                name: 'Ân Thiên',
-                id: 'thienanlhu',
+                name: 'Ân Qúa đẹp trai rồi',
+                id: 'thienandeptraiquadilhu',
+                email: 'thienan1804@lhu.edu.vn',
+            },
+            {
+                key: Math.random(),
+                name: 'Cũng là Ân nhưng đẹp trai x10',
+                id: 'thienandeptraix10lhu',
                 email: 'thienan1804@lhu.edu.vn',
             },
 
@@ -73,12 +76,12 @@ function DatasUser() {
 
 
     return (
-        <div className={cx('wrapper')}>
-            <GlobalTable
-                titles={dataU.titles}
-                components={dataU.datas}
-            />
-        </div>
+
+        <GlobalTable
+            titles={dataU.titles}
+            components={dataU.datas}
+        />
+
     );
 }
 

@@ -3,17 +3,21 @@ import styles from './GlobalTable.module.scss';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
-import React from "react";
-
+import React, { useState } from "react";
+import Info from "../../../Info";
 
 
 const cx = classNames.bind(styles)
 
 function GlobalTable({ titles, components, }) {
 
+    const [firstActive, setFirstActive] = useState(true)
 
+    const [nameValue, setNameValue] = useState(components[0].name)
+
+    const [idValue, setIdValue] = useState(components[0].id)
     return (
-        <>
+        <div className={cx('container')}>
             <table className={cx('wrapper')}>
                 <thead>
                     <tr className={cx('tr-head')}>
@@ -27,8 +31,17 @@ function GlobalTable({ titles, components, }) {
                         <tr
                             key={component.key}
                             className={index % 2 !== 0 ? cx('tr') : cx('even')}
+                            style={{
+                                // eslint-disable-next-line no-unused-expressions
+                                backgroundColor: index === 0 && firstActive ? '#00aeff' : '',
+                                color: index === 0 && firstActive ? "var(--white)" : ''
+                            }}
                             tabIndex="0"
-
+                            onClick={() => {
+                                setNameValue(component.name)
+                                setIdValue(component.id)
+                                setFirstActive(false)
+                            }}
                         >
                             <td>
                                 <FontAwesomeIcon icon={faCircleUser} className={cx('icon')} />
@@ -49,8 +62,8 @@ function GlobalTable({ titles, components, }) {
                     ))}
                 </tbody>
             </table>
-
-        </>
+            <Info title={nameValue} id={idValue} />
+        </div >
     );
 }
 

@@ -2,6 +2,7 @@
 const images = {
     // Icon
     logo: require('../images/logo-icon.png'),
+    logoLight: require('../images/logo-light.png'),
     home: require('../images/home.png'),
     user: require('../images/user.png'),
     userActive: require('../images/user-active.png'),

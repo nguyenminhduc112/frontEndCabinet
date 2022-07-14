@@ -1,19 +1,18 @@
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--white);
     flex: 1;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     margin-left: 20px;
 }
 
-.logo,
 .info {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.logo {
-    margin-top: 2.5rem;
 }
 
 .icon {
@@ -23,9 +22,15 @@
 }
 
 .name {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    display: inline-block;
+    width: 234px;
     font-weight: 600;
     margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .id {
@@ -34,6 +39,9 @@
 }
 
 .logo-img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
     padding-left: 8px;
     margin-bottom: 22px;
 }

@@ -4,6 +4,7 @@ import styles from './ListInfo.module.scss';
 import Header from "./Header";
 import Body from "./Body";
 
+
 const cx = classNames.bind(styles)
 
 function ListInfo() {

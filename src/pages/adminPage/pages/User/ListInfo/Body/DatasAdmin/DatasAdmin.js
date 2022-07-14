@@ -1,8 +1,7 @@
-import classNames from "classnames/bind";
-import styles from './DatasAdmin.module.scss';
+
 import GlobalTable from "../GlobalTable/GlobalTable";
 
-const cx = classNames.bind(styles)
+
 
 function DatasAdmin() {
     const dataU = {
@@ -71,12 +70,12 @@ function DatasAdmin() {
     }
 
     return (
-        <div className={cx('wrapper')}>
-            <GlobalTable
-                titles={dataU.titles}
-                components={dataU.datas}
-            />
-        </div>
+
+        <GlobalTable
+            titles={dataU.titles}
+            components={dataU.datas}
+        />
+
     );
 }
 
