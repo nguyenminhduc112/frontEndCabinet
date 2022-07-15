@@ -50,7 +50,7 @@ function Box({ blue = true, purple = true, orange = true, green = true, classNam
         <>
             {
                 statistics.map((statistic, index) => (
-                    <div className={cx('wrapper')}>
+                    <div className={cx('wrapper')} key={index}>
                         <span className={cx('title')}>{statistic.title}</span>
                         <div className={statistic.color}>
                             <span className={cx('box-number')}>{statistic.boxNumber}</span>

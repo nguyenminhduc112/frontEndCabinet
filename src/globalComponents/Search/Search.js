@@ -31,6 +31,15 @@ function Search() {
         }, 700)
     }, [debounced])
 
+    const handleChange = (e) => {
+        const searchValue = e.target.value
+        if (!searchValue.startsWith(' ')) {
+            setSearchValue(searchValue)
+        }
+
+    }
+
+
     return (
         <div className={cx('search')}>
             <input
@@ -38,7 +47,7 @@ function Search() {
                 value={searchValue}
                 placeholder="Tìm kiếm thông tin"
                 spellCheck={false}
-                onChange={e => setSearchValue(e.target.value)}
+                onChange={handleChange}
             />
             {!!searchValue && !loading && (
                 <button className={cx('clear')} onClick={handleClear}>
@@ -47,10 +56,11 @@ function Search() {
             )}
 
             {loading && <LoadIcon className={cx('loading')} />}
-            <button className={cx('search-btn')}>
+            <button className={cx('search-btn')} onMouseDown={e => e.preventDefault()}  >
                 <SearchIcon />
             </button>
         </div>
+
     );
 }
 
