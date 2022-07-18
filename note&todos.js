@@ -11,7 +11,7 @@
 //todo Xây dựng UI trang quản lí User & Admin --OK
 //todo Viết logic hiển thị danh sách user & admin khi kết hợp với API (API được gắn cứng) --OK
 
-//! Bug: Icon bị mất Active khi chuyển trang User trang qua lại giữa User và Admin 
+// Tạm chấp nhận: Icon bị mất Active khi chuyển trang User trang qua lại giữa User và Admin 
 
 //14/7/2022 :
 //todo Xây dựng UI phần sidebar hiển thị thông tin --OK
@@ -27,4 +27,4 @@
 //todo Bỏ qua hành vi focus vào ô tìm kiếm khi nhấn tìm kiếm --OK
 //todo Viết logic kí tự đầu tiên của thanh search không được là ‘Space’ --Ok
 //todo Build giao diện box-up & viết logic cho các thẻ input --OK
-//todo Fix bug icon sidebar
+//? help Fix Icon bị mất active 
